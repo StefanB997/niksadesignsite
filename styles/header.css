@@ -1,0 +1,76 @@
+.tophead{
+	padding-top:5px;
+	background-color: white ;
+	height: 50px;
+	width: 100%;
+}
+.topheadelements{
+	margin: 0 auto;
+	width: 1400px;
+	height: 50px;
+	/*background-color: blue;*/
+}
+.icon{
+	margin-top:7px;
+	float: right;
+	width: 50px;
+}
+.location{
+	float: right;
+}
+.adresa{
+	float: right;
+	font-size: 6pt;
+}
+.tel{
+	font-size: 6pt;
+	padding-right: 20px;
+}
+.telephone{
+	float: right;
+}
+.email{
+	float: right;
+	padding-right: 20px;
+}
+.mail{
+	font-size: 6pt;
+}
+.headelemets{
+	margin: 0 auto;
+	width: 1400px;
+	height: 120px;
+}
+.header{
+	width: 100%;
+	height: 120px;		
+	background-color: #e83930;
+	float: right;
+}
+.navigacija{
+	padding-top: 45px;
+	float: right;
+}
+.logo{
+	margin-left: -40px;
+	float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+	font-weight: ;
+	font-size: 22pt;
+	display: inline;
+}
+li a{
+	padding-right: 90px;
+	color:white;
+	text-decoration: none;
+	float: left;
+}
+li a:hover{
+	transition: .3s;
+	color: #b81e24;

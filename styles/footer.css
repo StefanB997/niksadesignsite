@@ -1,0 +1,36 @@
+.footer-container{
+	background-color: #e83930;
+	width: 100%;
+	height: 400px;
+	margin-top: 70px;
+}
+.footer-content{
+	margin: 0 auto;
+	width: 1400px;
+}
+.info-hold{
+	margin-left: 45%;
+	width: 670px;
+	height: 240px;
+}
+.logo-hold{
+	width: 450px;
+	height: 200px;
+	padding-top: 70px;
+	float: left;
+}
+.vertical-menu {
+	padding-top: 90px;
+    width: 200px;
+ }
+.vertical-menu a {
+    color: white;
+    display: block; 
+    padding: 12px; 
+    text-decoration: none; 
+}
+
+.vertical-menu a:hover {
+	color: #b81e24;
+	transition: .3s;
+}
