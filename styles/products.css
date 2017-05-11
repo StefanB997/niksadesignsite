@@ -32,6 +32,9 @@ body{
 }
 .produkti li{
 	padding: 5px;
-	max-width: 300px;
+	/*max-width: 300px;*/
 	color: black;
+	/*background-color: gray;*/
+	width: 100%;
+	display: block;
 }
