@@ -30,9 +30,8 @@ body{
 	height: 700px;
 	border: 1px solid #e83930;
 }
-.produkti a{
+.produkti li{
 	padding: 5px;
-	width: 300px;
+	max-width: 300px;
 	color: black;
 }
-
