@@ -11,62 +11,46 @@
 
 <?php include 'header.php';
 	  include 'general.php';
-	  $sql = 'select * from p_kategorii';
-	  $query = $db->query($sql);
-	  $products = $query->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
- 
-
-
-
 <div class="products-container">
 	<div class="products-content">
 		<div class="categories-holder">
 			<div class="categories">
 				<ul class="produkti">
-<?php
-	foreach($products as $key => $pro) {
-		echo '<li>'.$pro['ime'];'</li>';
-	} 
-?>
-
-					<!-- <li><a href="#" class="h1">Бои и Лакови</a></li> -->
-<!-- 				<li><a href="#"></a></li>  // ZA PODKATEGORII
-					<li><a href="#"></a></li> -->
-
-					<!-- <li><a href="#" class="h1">Железарија</a></li> -->
-<!-- 					<li><a href="#"></a></li>		
-					<li><a href="#"></a></li> -->
-
-					<!-- <li><a href="#" class="h1">Електрика</a></li>
-					<li><a href="#"></a></li>	
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li> -->
-
-					<!-- <li><a href="#" class="h1">Водовод</a></li> -->
-<!-- 					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li> -->
-
-					<!-- <li><a href="#" class="h1">Санитарија</a></li> -->
-<!-- 					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li> -->
-
-					<!-- <li><a href="#" class="h1">Градежни Материјали</a></li> -->
-<!-- 					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li> -->
+					<?php
+						$sql = 'select * from p_kategorii';
+	 					$query = $db->query($sql);
+	  					$products = $query->fetchAll(PDO::FETCH_ASSOC);
+						foreach ($products as $cat){
+							echo '<li>'.$cat['ime'].'</li>';
+						}
+					?>
 				</ul>
 			</div>
 		</div>
 		<div class="products-holder">
 			<div class="products">
-				<ul>
-					<li><div class="product"><a href="#"></a></div></li>
-					<li><div class="product"><a href="#"></a></div></li>
-					<li><div class="product"><a href="#"></a></div></li>
-				</ul>
+				<?php 
+					$sql = 'select * from p_produkti';
+	  				$query = $db->query($sql);
+	  				$products = $query->fetchAll(PDO::FETCH_ASSOC);
+
+	  				foreach($products as $product){
+	  					if($product % 2 == 0) { 
+		  					echo '<div class="row"'.(floor($key/3)+1).'>';
+	  					}
+	  						echo '<div class="product"'.'>';
+		  					echo '<img src="'.$product['image'].'">';
+		  					echo '<div class="product-text"'.'>';
+		  					echo '<p> Произведувач: '.$product['proizveduvac'].'</p>';
+		  					echo '<p> Пакување: '.$product['pakuvanje'].'</p>';
+		  					echo '<p class="cena"> Цена: '.$product['cena(mkd)'].'</p>';
+		  					echo '</div>';
+		  					echo '</div>';
+	  					
+	  				}
+				?>
 			</div>
 		</div>
 	</div>
