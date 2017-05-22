@@ -21,8 +21,8 @@
 					<?php
 						$sql = 'select * from p_kategorii';
 	 					$query = $db->query($sql);
-	  					$products = $query->fetchAll(PDO::FETCH_ASSOC);
-						foreach ($products as $cat){
+	  					$categories = $query->fetchAll(PDO::FETCH_ASSOC);
+						foreach ($categories as $cat){
 							echo '<li>'.$cat['ime'].'</li>';
 						}
 					?>
