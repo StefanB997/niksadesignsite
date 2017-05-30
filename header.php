@@ -1,4 +1,4 @@
-<?
+
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="styles/header.css">
 <div class= "tophead">
@@ -26,7 +26,7 @@
 				<div class="navigacija">
 					<nav>
 						<ul>
-  							<li><a href="index.php" class="active">Почетна</a></li>
+  							<li><a href="index.php">Почетна</a></li>
   							<li><a href="products.php">Производи</a></li>
 							<li><a href="#">За Нас</a></li>
 						</ul>

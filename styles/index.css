@@ -9,36 +9,43 @@ body{
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 3000px;
 	background-color: white ;
 }
 .products-container{
+	position: relative;
 	margin: 0 auto;
 	width: 1400px;
 }
 .row-one{
-	margin-top:90px;
+	display: inline-block;
+	margin-top: 90px;
 }
 .product{
-	height: 466px;
-	width: 466px;
+	display: inline-block;
+	height: 380px;
+	width: 400px;
+	margin-left: 50px;
 	float: left;
 }
-
+.row-two{
+	display: inline-block;
+	margin-top: 35px;
+}
 .product-hover:hover {
 	transition: ease-out .3s;
-  transform: scale(1.1);
+  	transform: scale(1.1);
 }
 .zanas-container{
 	margin: 0 auto;
 	width: 1400px;
-	height: 460px;
 }
 .paragraph{
+	margin-left: 50px;
 	width: 40%;
 	font-size: 20pt;
 	float: left;
 }
 .company{
-	padding-left: 65px;
+	margin-left: 35px;
 }
+.

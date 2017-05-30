@@ -3,9 +3,7 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="styles/index.css">
-	<link rel="stylesheet" href="styles/header.css">
 	<link rel="stylesheet" href="styles/slider.css">
-	<link rel="stylesheet" href="styles/footer.css">
 	<meta charset="utf-8">
 	<script src="https://www.w3schools.com/lib/w3data.js"></script>
 
@@ -36,7 +34,9 @@
 			</div>
 		</figure>
 		</div>
-		<h1 style="font-size:35pt; font-weight: bold; max-width: 1400px; margin: 0 auto; padding-top: 90px;">Прозводи</h1>
+		<div class="naslov-produkti" style="background-color: #e83930;margin-top: -7px">
+			<h7 style="width: 100%; color: white;font-size:35pt;margin: 0 0 0px 305px;">Прозводи</h7>
+		</div>
 		<div class="products-container">
 			<div class="row-one">
 				<div class="product">
@@ -61,7 +61,9 @@
 				</div>
 			</div>
 		</div>
-		<h1 style="font-size:35pt; font-weight: bold; max-width: 1400px; margin: 0 auto; padding-top: 90px;">За Нас</h1>
+		<div class="naslov-zanas" style="background-color: #e83930;margin: 70px 0 70px 0;">
+			<h7 style="width:100%;color:white;font-size:35pt;margin: 0 0 0px 305px;">За Нас</h7>
+		</div>
 		<div class="zanas-container">
 			<div class="paragraph">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -70,23 +72,8 @@
 				<img src="media/images/company.png" class="company">
 			</div>	
 		</div>
+<?php include 'footer.php';?>
 
-		<div class="footer-container">
-			<div class="footer-content">
-				<div class="logo-hold">
-					<div><img src="media/images/logo.png" style="width: 425px; height: 150px"></div>
-				</div>
-				<div class="info-hold">
-					<div class="vertical-menu">
-					  <a href="#">Бои и Лакови</a>
-					  <a href="#">Железарија</a>
-					  <a href="#">Водовод</a>
-					  <a href="#">Санетарија</a>
-					  <a href="#">Градежни Материјали</a>
-					</div> 
-				</div>
-			</div>
-		</div>
 	</div>
 </body>
 </html>

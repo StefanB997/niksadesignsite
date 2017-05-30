@@ -11,7 +11,7 @@
 .info-hold{
 	margin-left: 45%;
 	width: 670px;
-	height: 240px;
+	height: 400px;
 }
 .logo-hold{
 	width: 450px;
@@ -28,9 +28,16 @@
     display: block; 
     padding: 12px; 
     text-decoration: none; 
+    font-size: 15pt;
 }
-
-.vertical-menu a:hover {
+.info-hold a{
+	font-size: 15pt;
+}
+.info-hold a:hover {
 	color: #b81e24;
 	transition: .3s;
+}
+.row{
+	float: left;
+	width: 150px;
 }
