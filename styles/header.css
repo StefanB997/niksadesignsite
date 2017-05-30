@@ -1,17 +1,24 @@
+body{
+	color:#545353;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+}
 .tophead{
-	padding-top:5px;
+	padding:5px 20px 0 0;
 	background-color: white ;
 	height: 50px;
 	width: 100%;
+	box-sizing: border-box;
 }
 .topheadelements{
 	margin: 0 auto;
-	width: 1400px;
+	max-width: 1300px;
 	height: 50px;
 	/*background-color: blue;*/
 }
 .icon{
-	margin-top:7px;
+	margin-top: 8px;
 	float: right;
 	width: 50px;
 }
@@ -24,21 +31,21 @@
 }
 .tel{
 	font-size: 6pt;
-	padding-right: 20px;
+	padding-right: 10px;
 }
 .telephone{
 	float: right;
 }
 .email{
 	float: right;
-	padding-right: 20px;
+	padding-right: 10px;
 }
 .mail{
 	font-size: 6pt;
 }
 .headelemets{
 	margin: 0 auto;
-	width: 1400px;
+	max-width: 1300px;
 	height: 120px;
 }
 .header{
@@ -52,7 +59,7 @@
 	float: right;
 }
 .logo{
-	margin-left: -40px;
+	/*margin-left: -40px;*/
 	float: left;
 }
 ul {
@@ -65,12 +72,12 @@ li {
 	font-size: 22pt;
 	display: inline;
 }
-li a{
+.navigacija li a{
 	padding-right: 90px;
 	color:white;
 	text-decoration: none;
 	float: left;
 }
-li a:hover{
+.navigacija li a:hover{
 	transition: .3s;
 	color: #b81e24;

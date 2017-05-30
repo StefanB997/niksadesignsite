@@ -6,7 +6,7 @@
 }
 .footer-content{
 	margin: 0 auto;
-	width: 1400px;
+	max-width: 1300px;
 }
 .info-hold{
 	margin-left: 45%;
@@ -20,7 +20,8 @@
 	float: left;
 }
 .vertical-menu {
-	padding-top: 90px;
+	float: left;
+	padding-top: 50px;
     width: 200px;
  }
 .vertical-menu a {

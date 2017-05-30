@@ -19,7 +19,7 @@
 							<li><a href="#">За Нас</a></li>
 						</ul>
 					</div>
-					<div> 
+					<div class="vertical-menu"> 
 						<ul class="row">
 							<li><a href="#">Бои и Лакови</a></li>
 							<li><a href="#">Железарија</a></li>
