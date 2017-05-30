@@ -1,0 +1,13 @@
+id,name,podkategorii_id',proizveduvac,pakuvanje,cena(mkd),image
+1,"Емалј Лак",1,NevenaLux,750мл.,"150 денари",media/images/products/pic7.png
+2,ЕмајлЛак,1,Hemmax,750мл.,"250 денари",media/images/products/pic2.png
+3,ЕмајлЛак,1,Hemmax,750мл.,"150 денари",media/images/products/pic6.png
+4,"Боја за Радијатори",2,Hemmax,750мл.,"180 денари",media/images/products/pic1.png
+5,"Топ Лазура",2,Hemmax,750мл.,"160 денари",media/images/products/pic10.png
+6,"Основна Боја за Метал",2,Hemmax,750мл.,"150 денари",media/images/products/pic3.png
+7,"Боја за Дрво",2,Hemmax,750мл.,"170 денари",media/images/products/pic8.png
+8,Алкофас,2,Hemmax,750мл.,"200 денари",media/images/products/pic5.png
+9,"Спреј Боја",2,Cosmos,750мл.,"150 денари",media/images/products/pic4.png
+10,"Уљен Разредувач",3,Chemco,750мл.,"120 денари",media/images/products/pic12.png
+11,Нитро,3,MultiChimica,750мл.,"120 денари",media/images/products/pic11.png
+12,"Основна Боја за Метал",2,Hemmax,750ml.,"120 денари",media/images/products/pic9.png
