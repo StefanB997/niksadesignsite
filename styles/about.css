@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+	color:#545353;
+	font-family: 'Fira Sans Condensed', sans-serif;
+}
+.container{
+	width: 100%;
+}
+.top-conent{
+	max-width: 1300px;
+}
+.p-holder{
+	margin-top: 100px;
+	width: 100%;
+}
+	.p-holder p{
+		margin: 0 auto;
+		text-align: center;
+		max-width: 1300px;
+		font-size: 25px;
+	}
+	.p-holder h1{
+		padding-top: 100px;
+		padding-bottom: 50px;
+		font-size: 60px;
+		margin: 0 0 50px 0;
+		text-align: center;
+	}
+.mapa{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+	.mapa h1{
+		font-size: 60px;
+		text-align: center
+	}
+.maphold{
+	height: 550px;
+}

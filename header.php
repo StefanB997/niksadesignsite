@@ -28,7 +28,7 @@
 						<ul>
   							<li><a href="index.php">Почетна</a></li>
   							<li><a href="products.php">Производи</a></li>
-							<li><a href="#">За Нас</a></li>
+							<li><a href="about.php">За Нас</a></li>
 						</ul>
 					</nav>
 				</div>
