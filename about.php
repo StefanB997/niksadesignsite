@@ -44,10 +44,21 @@ include('header.php');
 					</div>
 				</figure>
 			</div>
+			<div class="contact-hold">
+				<h1>Контакт</h1>
+				<div class="contact-content">
+					<h2>Име</h2><input type="text">
+					<h2>Презиме</h2><input type="text">
+					<h2>Е-маил</h2><input type="email"><br>
+					<h2>Порака</h2><textarea></textarea><br>
+					<button type="submit">ИСПРАТИ</button>
+				</div>
+			</div>
 			<div class="mapa">
 				<h1>Локација</h1>
 			</div>
-				<div class="map-hold"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.5027357272597!2d21.44846391588504!3d41.96801477921529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415e16d5d5915%3A0x57d177061fd67185!2s134%2C+Skopje+1000!5e0!3m2!1sen!2smk!4v1496219158402" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+			<div class="map-hold"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.5027357272597!2d21.44846391588504!3d41.96801477921529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415e16d5d5915%3A0x57d177061fd67185!2s134%2C+Skopje+1000!5e0!3m2!1sen!2smk!4v1496219158402" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
 		</div>
 <?php include('footer.php');?>
 	</div>

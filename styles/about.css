@@ -35,6 +35,41 @@ body{
 		font-size: 60px;
 		text-align: center
 	}
-.maphold{
+.map-hold{
 	height: 550px;
+	margin-top: 100px;
 }
+.contact-hold{
+	text-align: center;	
+	margin: 0 auto;
+	max-width: 1300px;
+	padding: 60px 0 ;
+}
+	.contact-hold h1{
+		font-size: 60px;
+	}
+	.contact-content input{
+		text-align: center;
+		color:#545353;
+		font-size: 20px;
+		width:30%;
+		height: 40px;
+		border: 1px solid #e83930;
+	}
+	.contact-content button{
+		background-color: #e83930;
+		margin-top: 50px;
+		width: 10%;
+		height: 50px;
+		font-size: 20px;
+		color: white;
+		border-radius: 3px;
+	}
+	.contact-content textarea{
+		resize: none;
+		border: 2px solid #e83930;
+		width: 30%;
+		height: 150px;
+		color:#545353;
+		font-size: 20px;
+	}

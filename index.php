@@ -39,13 +39,13 @@
 		<div class="products-container">
 			<div class="row-one">
 				<div class="product">
-					<a href="#"><img src="media/images/boilakovi.png" class="product-hover"></a>
+					<a href="products.php?cat=1"><img src="media/images/boilakovi.png" class="product-hover"></a>
 				</div>
 				<div class="product">
-					<a href="#"><img src="media/images/zelezarija.png" class="product-hover"></a>
+					<a href="products.php?cat=2"><img src="media/images/zelezarija.png" class="product-hover"></a>
 				</div>
 				<div class="product">
-					<a href="#"><img src="media/images/elektrika.png" class="product-hover"></a>
+					<a href="products.php?cat=3"><img src="media/images/elektrika.png" class="product-hover"></a>
 				</div>
 			</div>
 			<div class="row-two">

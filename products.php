@@ -1,3 +1,29 @@
+<?php 
+include "general.php";
+
+$sql = '';
+
+if(isset($_GET['scat']) && strlen(trim($_GET['scat'])) > 0){
+	$sql = 'select * from p_produkti where podkategorii_id = :scat';
+	$query = $db->prepare($sql);
+	$query->bindValue(':scat', $_GET['scat'], PDO::PARAM_INT);
+} else if(isset($_GET['cat']) && strlen(trim($_GET['cat'])) > 0){
+	$sql = 'select p_produkti.* from p_produkti
+		join p_podkategorii
+		on p_produkti.podkategorii_id = p_podkategorii.id
+		join p_kategorii
+		on p_kategorii.id = p_podkategorii.id_parent
+		where p_podkategorii.id_parent = :cat';
+	$query = $db->prepare($sql);
+	$query->bindValue(':cat', $_GET['cat'], PDO::PARAM_INT);
+} else {
+	$sql = 'select * from p_produkti order by rand() limit 9';
+	$query = $db->prepare($sql);
+}
+
+$query->execute();
+$res = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,25 +39,26 @@
 include ('header.php');
 ?> 
 <div class="container">
+	<div class="categories-holder">
 	<div class="categories">
 		<nav>
 		    <div class="menu-item">
-		      <h4><a href="#">Бои и Лакови</a></h4>
+		      <h4><a href="?cat=1">Бои и Лакови</a></h4>
 		      <ul>
-		      	<li><a href="#">-Емајл Лак</a></li>
-		      	<li><a href="#">-Премази</a></li>
-		      	<li><a href="#">-Разредувачи</a></li>
+		      	<li><a href="?scat=1">-Емајл Лак</a></li>
+		      	<li><a href="?scat=2">-Премази</a></li>
+		      	<li><a href="?scat=3">-Разредувачи</a></li>
 		      </ul>
 		    </div>
 		      
 		    <div class="menu-item">
-		      <h4><a href="#">Железарија</a></h4>
+		      <h4><a href="?cat=2">Железарија</a></h4>
 		      <ul>
-		        <li><a href="#">-Завртки</a></li>
-		        <li><a href="#">-Жица</a></li>
-		        <li><a href="#">-Четки</a></li>
-		        <li><a href="#">-Брави</a></li>
-		        <li><a href="#">-Алати</a></li>
+		        <li><a href="?scat=4">-Завртки</a></li>
+		        <li><a href="?scat=5">-Жица</a></li>
+		        <li><a href="?scat=6">-Четки</a></li>
+		        <li><a href="?scat=7">-Брави</a></li>
+		        <li><a href="?scat=8">-Алати</a></li>
 		      </ul>
 		    </div>
 		      
@@ -75,7 +102,24 @@ include ('header.php');
 		    </div>
 		</nav>
 	</div>
+	</div>
 	<div class="products">
+		<div class="procucts">
+			<ul>
+			<?php foreach($res as $row){ ?>
+				<li>
+					<?=$row['name'];?>
+					<br/>
+					<?=$row['proizveduvac'];?>
+					<br/>
+					<?=$row['cena'];?>
+					<br/>
+					<img src="<?=$row['image'];?>">
+					<br/>
+				</li>
+			<?php } ?>
+			</ul>
+		</div>
 	</div>
 </div>
 

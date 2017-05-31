@@ -6,14 +6,12 @@ body{
 }
 .container{
 	margin: 0 auto;
-	width: 1400px;
-	height: 2000px;
-	/*background-color: silver;*/
+	max-width: 1300px;
+	height: 2000px;;
 }
 .categories{
-	padding-top: 150px;
-	width: 25%;
-	background-color: 
+	padding-top: 70px;
+	/*width: 25%; */
 }
 .menu-item h4 {
 	width: 45%;
@@ -35,6 +33,7 @@ body{
 	font-weight: 500;
 	padding: 7px 12px;
 	width: 100%;
+	box-sizing: border-box;
 }
  
 .menu-item ul a {
@@ -62,4 +61,15 @@ body{
 	overflow: hidden;
 	padding: 0px;
 	transition: all .3s ease-in-out;
+}
+.products{
+	margin: 0 auto;
+	width: 79%;
+	height: 500px;
+	background-color: blue;
+	float: right;
+	margin-top: 106px;
+}
+.categories-holder{
+	float: left;
 }
