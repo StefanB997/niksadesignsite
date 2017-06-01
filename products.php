@@ -63,41 +63,41 @@ include ('header.php');
 		    </div>
 		      
 		    <div class="menu-item">
-		      <h4><a href="#">Електрика</a></h4>
+		      <h4><a href="?cat=3">Електрика</a></h4>
 		      <ul>
-		        <li><a href="#">-Кабли</a></li>
-		        <li><a href="#">-Прекинувачи</a></li>
-		        <li><a href="#">-Греачи</a></li>
-		        <li><a href="#">-Осигурачи</a></li>
-		        <li><a href="#">-Сијалици</a></li>
+		        <li><a href="?scat=9">-Кабли</a></li>
+		        <li><a href="?scat=10">-Прекинувачи</a></li>
+		        <li><a href="?scat=11">-Греачи</a></li>
+		        <li><a href="?scat=12">-Осигурачи</a></li>
+		        <li><a href="?scat=13">-Сијалици</a></li>
 		      </ul>
 		    </div>
 		      
 		    <div class="menu-item">
-		      <h4><a href="#">Водовод</a></h4>
+		      <h4><a href="?cat=4">Водовод</a></h4>
 		      <ul>
-		        <li><a href="#">-Чешми</a></li>
-		        <li><a href="#">-Цевки</a></li>
-		        <li><a href="#">-Вентили</a></li>
+		        <li><a href="?scat=14">-Чешми</a></li>
+		        <li><a href="?scat=15">-Цевки</a></li>
+		        <li><a href="?scat=16">-Вентили</a></li>
 		      </ul>
 		    </div>
 
 		    <div class="menu-item">
-		      <h4><a href="#">Санитарија</a></h4>
+		      <h4><a href="?cat=5">Санитарија</a></h4>
 		      <ul>
-		        <li><a href="#">-Казанчиња</a></li>
-		        <li><a href="#">-ВЦ Шољи</a></li>
+		        <li><a href="?scat=17">-Казанчиња</a></li>
+		        <li><a href="?scat=18">-ВЦ Шољи</a></li>
 		      </ul>
 		    </div>
 
 		   	<div class="menu-item">
-		      <h4><a href="#">Градежни Материјали</a></h4>
+		      <h4><a href="?cat=6">Градежни Материјали</a></h4>
 		      <ul>
-		        <li><a href="#">-Гипс Картон</a></li>
-		        <li><a href="#">-Стиропор</a></li>
-		        <li><a href="#">-Лепаци</a></li>
-		        <li><a href="#">-Силикон</a></li>
-		        <li><a href="#">-Поликолор</a></li>
+		        <li><a href="?scat=19">-Гипс Картон</a></li>
+		        <li><a href="?scat=20">-Стиропор</a></li>
+		        <li><a href="?scat=21">-Лепаци</a></li>
+		        <li><a href="?scat=22">-Силикон</a></li>
+		        <li><a href="?scat=23">-Поликолор</a></li>
 		      </ul>
 		    </div>
 		</nav>
@@ -108,14 +108,16 @@ include ('header.php');
 			<ul>
 			<?php foreach($res as $row){ ?>
 				<li>
-					<?=$row['name'];?>
-					<br/>
-					<?=$row['proizveduvac'];?>
-					<br/>
-					<?=$row['cena'];?>
-					<br/>
 					<img src="<?=$row['image'];?>">
-					<br/>
+					<span class="product-name">
+						<?=$row['name'];?>
+					</span>
+					<span class="product-vendor">
+						<?=$row['proizveduvac'];?>
+					</span>
+					<span class="product-price">
+						<?=$row['cena'];?>
+					</span>
 				</li>
 			<?php } ?>
 			</ul>

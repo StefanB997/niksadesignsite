@@ -50,13 +50,13 @@
 			</div>
 			<div class="row-two">
 				<div class="product">
-					<a href="#"><img src="media/images/vodovod.png" class="product-hover"></a>
+					<a href="products.php?cat=4"><img src="media/images/vodovod.png" class="product-hover"></a>
 				</div>
 				<div class="product">
-					<a href="#"><img src="media/images/sanitarija.png" class="product-hover"></a>
+					<a href="products.php?cat=5"><img src="media/images/sanitarija.png" class="product-hover"></a>
 				</div>
 				<div class="product">
-					<a href="#"><img src="media/images/materijali.png" class="product-hover"></a>
+					<a href="products.php?cat=6"><img src="media/images/materijali.png" class="product-hover"></a>
 				</div>
 			</div>
 		</div>

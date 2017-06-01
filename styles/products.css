@@ -65,11 +65,53 @@ body{
 .products{
 	margin: 0 auto;
 	width: 79%;
-	height: 500px;
-	background-color: blue;
+	/*height: 500px;*/
+	/*background-color: blue;*/
 	float: right;
 	margin-top: 106px;
 }
 .categories-holder{
 	float: left;
 }
+
+.procucts ul {
+	width: 95%;
+	float: right;
+}
+
+	.procucts ul li {
+		width: calc(100% / 3 - 20px);
+		float: left;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+		.procucts ul li img {
+			width: 100%;
+		}
+
+		.procucts ul li span {
+			display: block;
+		}
+
+		.procucts ul li span.product-name {
+			background-color: #e83930;
+			color: white;
+			font-size: 25px;
+			padding: 5px 20px;	
+		}
+
+		.procucts ul li span.product-vendor {
+			background-color: #e83930;
+			color: white;
+			padding: 5px 20px;
+		}
+
+		.procucts ul li span.product-price {
+			font-weight: bold;
+			border: 1px solid #e83930;
+			color: #e83930;
+			background-color: white;
+			font-size: 20px;
+			padding: 5px 20px;
+		}
