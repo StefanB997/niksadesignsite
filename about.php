@@ -25,22 +25,22 @@ include('header.php');
 			<div class="slider">	
 				<figure>
 					<div class="slide">
-						<img src="media/images/slika1.png">
+						<img src="media/images/slider-project-five.jpg">
 					</div>
 
 					<div class="slide">
-						<img src="media/images/slika2.png">
+						<img src="media/images/slider-project-four.jpg">
 					</div>
 
 					<div class="slide">
-						<img src="media/images/slika3.png">
+						<img src="media/images/slider-project-three.jpg">
 					</div>			
 
 					<div class="slide">
-						<img src="media/images/slika4.png">
+						<img src="media/images/slider-project-two.jpg">
 					</div>
 					<div class="slide">
-						<img src="media/images/slika5.png">
+						<img src="media/images/slider-project-one.jpg">
 					</div>
 				</figure>
 			</div>
